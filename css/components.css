@@ -1,0 +1,136 @@
+/* ==========================================
+   ボタン（c-btn）
+   ========================================== */
+.c-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px; /* スマホでもタップしやすいサイズ */
+  font-size: var(--font-sm);
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.c-btn:hover {
+  background-color: var(--color-primary-hover);
+}
+
+/* ==========================================
+   投稿フォーム（c-form）
+   ========================================== */
+.c-form {
+  background: var(--bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.c-form__textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 10px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: var(--font-md);
+  font-family: inherit;
+  resize: vertical;
+  box-sizing: border-box;
+}
+.c-form__textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+.c-form__actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* ==========================================
+   投稿カード（c-post）
+   ========================================== */
+.c-post {
+  background: var(--bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+}
+.c-post__meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-sm);
+  color: var(--color-muted);
+  margin-bottom: 8px;
+}
+.c-post__author {
+  font-weight: 600;
+  color: var(--color-text);
+}
+.c-post__body {
+  font-size: var(--font-md);
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+/* ==========================================
+   メニューリンクカード（c-menu-card）
+   ========================================== */
+.c-menu-card {
+  background: var(--bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  color: var(--color-text);
+  display: block;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.c-menu-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+.c-menu-card__title {
+  font-size: var(--font-lg);
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  color: var(--color-primary);
+}
+.c-menu-card__desc {
+  font-size: var(--font-sm);
+  color: var(--color-muted);
+  margin: 0;
+}
+
+/* ==========================================
+   共通ヘッダー（c-header）
+   ========================================== */
+.c-header-logo {
+  font-size: var(--font-lg);
+  font-weight: 700;
+}
+.c-header-nav__link {
+  font-size: var(--font-sm);
+  color: var(--color-muted);
+  font-weight: 500;
+}
+.c-header-nav__link:hover {
+  color: var(--color-primary);
+}
+
+/* ==========================================
+   タイポグラフィ（c-heading）
+   ========================================== */
+.c-page-title {
+  font-size: var(--font-xl);
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+.c-page-desc {
+  font-size: var(--font-sm);
+  color: var(--color-muted);
+  margin: 0;
+}
