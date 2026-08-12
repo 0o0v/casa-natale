@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>掲示板メニュー - GitHub Board</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <!-- 共通ヘッダー -->
+  <header class="l-header">
+    <div class="l-header__inner">
+      <span class="c-header-logo">📌 GitHub Board</span>
+      <nav style="display: flex; gap: 16px;">
+        <!-- ログアウトすると玄関ページ、またはログインページに戻る -->
+        <a href="login.html" class="c-header-nav__link">ログアウト</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="l-container l-container--wide">
+    <header style="margin-bottom: 32px;">
+      <h1 class="c-page-title">メインメニュー</h1>
+      <p class="c-page-desc">興味のあるカテゴリの掲示板を選んで参加してください。</p>
+    </header>
+
+    <div class="l-grid">
+      <a href="bbs-all.html" class="c-menu-card">
+        <h2 class="c-menu-card__title">雑談掲示板</h2>
+        <p class="c-menu-card__desc">日常のちょっとしたことや、自由なつぶやきはこちらでどうぞ。</p>
+      </a>
+
+      <a href="bbs-tech.html" class="c-menu-card">
+        <h2 class="c-menu-card__title">技術・プログラミング</h2>
+        <p class="c-menu-card__desc">HTML/CSSやJavaScript、GitHubの使い方に関する情報交換。</p>
+      </a>
+
+      <a href="bbs-game.html" class="c-menu-card">
+        <h2 class="c-menu-card__title">ゲーム部屋</h2>
+        <p class="c-menu-card__desc">最近ハマっているゲームや、攻略情報について語る場所です。</p>
+      </a>
+
+      <a href="bbs-hobby.html" class="c-menu-card">
+        <h2 class="c-menu-card__title">趣味・アニメ・映画</h2>
+        <p class="c-menu-card__desc">おすすめの作品や、あなたの趣味について熱く語りましょう。</p>
+      </a>
+
+      <a href="bbs-notice.html" class="c-menu-card">
+        <h2 class="c-menu-card__title">運営からのお知らせ</h2>
+        <p class="c-menu-card__desc">掲示板のルールや、アップデートに関する重要な告知です。</p>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
