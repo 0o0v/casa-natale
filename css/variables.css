@@ -1,0 +1,37 @@
+:root {
+  /* カラーテーマ */
+  --bg-main: #f4f6f9;
+  --bg-card: #ffffff;
+  --color-text: #24292f;
+  --color-muted: #57606a;
+  --color-primary: #0969da;
+  --color-primary-hover: #0c57d0;
+  --color-border: #d0d7de;
+
+  /* フォントサイズ */
+  --font-sm: 13px;
+  --font-md: 15px;
+  --font-lg: 18px;
+  --font-xl: 24px;
+
+  /* 共通の余白・角丸 */
+  --radius-md: 6px;
+  --space-md: 16px;
+}
+
+/* 全体のリセットと基本定義 */
+body {
+  background-color: var(--bg-main);
+  color: var(--color-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%; /* スマホの文字サイズ自動調整防止 */
+}
+
+/* リンクの初期化 */
+a {
+  color: inherit;
+  text-decoration: none;
+}
