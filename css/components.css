@@ -134,3 +134,30 @@
   color: var(--color-muted);
   margin: 0;
 }
+
+/* ==========================================
+   入力フォーム（c-input）※ログイン画面等で使用
+   ========================================== */
+.c-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.c-field__label {
+  font-size: var(--font-sm);
+  font-weight: 600;
+  color: var(--color-text);
+}
+.c-field__input {
+  width: 100%;
+  padding: 10px;
+  font-size: var(--font-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.c-field__input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
