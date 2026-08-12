@@ -1,0 +1,55 @@
+/* 画面中央寄せのコンテナ */
+.l-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px var(--space-md); /* スマホ用に上下余白を少し縮小 */
+  box-sizing: border-box;
+}
+
+/* 横幅を少し広く見せたい画面（メニュー画面など）用 */
+.l-container--wide {
+  max-width: 800px;
+}
+
+/* 共通ヘッダーの配置 */
+.l-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--color-border);
+  padding: 0 var(--space-md);
+}
+.l-header__inner {
+  max-width: 800px;
+  margin: 0 auto;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* パーツを縦に並べる（隙間を自動調整） */
+.l-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.l-stack--sm {
+  gap: 12px;
+}
+
+/* メニューカードを並べるグリッド（スマホ対応の肝） */
+.l-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* デフォルト（スマホ）は1列 */
+  gap: 16px;
+  margin-top: 24px;
+}
+
+/* パソコン・タブレット向け（画面幅560px以上）の調整 */
+@media (min-width: 560px) {
+  .l-container {
+    padding: 40px var(--space-md); /* PCは上下余白を広く */
+  }
+  .l-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* 横幅に応じて自動で2〜3列に並べる */
+  }
+}
