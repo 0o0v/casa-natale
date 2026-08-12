@@ -53,3 +53,8 @@
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* 横幅に応じて自動で2〜3列に並べる */
   }
 }
+
+/* ログイン画面などの幅が狭いカード用コンテナ */
+.l-container--narrow {
+  max-width: 400px;
+}
