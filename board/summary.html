@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> 📝 まとめ</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <!-- 共通ヘッダー -->
+  <header class="l-header">
+    <div class="l-header__inner">
+      <a href="menu.html" class="c-header-logo">📌 GitHub Board</a>
+      <nav style="display: flex; gap: 16px;">
+        <!-- ナビゲーションのリンク先をメニューページに変更 -->
+        <a href="menu.html" class="c-header-nav__link">メニューに戻る</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="l-container">
+    <div class="l-stack">
+      
+      <section>
+        <h1 class="c-page-title">📝 まとめ</h1>
+        <p class="c-page-desc">議論や出来事の整理・記録</p>
+      </section>
+      
+      <form class="c-form">
+        <textarea class="c-form__textarea" placeholder="要約" required></textarea>
+        <div class="c-form__actions">
+          <button type="submit" class="c-btn">投稿する</button>
+        </div>
+      </form>
+
+      <div class="l-stack l-stack--sm">
+        <article class="c-post">
+          <div class="c-post__meta">
+            <span class="c-post__author">@git_user</span>
+            <span class="c-post__date">30分前</span>
+          </div>
+          <p class="c-post__body">おかえりなさい</p>
+        </article>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>
 
